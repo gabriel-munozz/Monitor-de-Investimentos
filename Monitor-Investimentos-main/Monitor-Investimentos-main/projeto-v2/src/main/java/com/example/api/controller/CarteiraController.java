@@ -207,3 +207,4 @@ public class CarteiraController {
         relatorio.put("ativos", ativos);
         return ResponseEntity.ok(relatorio);
 }
+}
