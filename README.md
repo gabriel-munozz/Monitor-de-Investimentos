@@ -12,7 +12,6 @@ A aplicação permite o cadastro de investidores, criação de carteiras e regis
 
 Acesse o repositório no GitHub, clique no botão 'Code', selecione Download ZIP
 e extraia o arquivo em uma pasta de sua preferência.
----
 
 **2. Execute o projeto**
 
