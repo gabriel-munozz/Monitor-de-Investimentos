@@ -46,34 +46,34 @@ Execute nessa ordem para ver tudo funcionando:
 
 **1. Criar um investidor**
 
-´´´
+````
 POST /investidores
 { "nome": "Nome", "email": "email@email.com", "cpf": "123.456.789-00" }
-´´´
+````
 
 **2. Criar uma carteira**
 
-´´´
+````
 POST /carteiras
 { "nome": "Carteira Renda", "descricao": "Renda", "investidor": { "id": 1 } }
-´´´
+````
 
 **3. Cadastrar um ativo** *(a cotação é buscada automaticamente na API HG Brasil)*
 
-´´´
+````
 POST /ativos
 { "ticker": "PETR4", "nome": "Petrobras", "tipo": "ACAO", "setor": "Energia" }
-´´´
+````
 
 **4. Vincular o ativo à carteira**
 
-´´´
+````
 POST /carteiras/1/ativos/1
-´´´
+````
 
 **5. Registrar uma compra**
 
-´´´
+````
 POST /transacoes
 {
   "tipo": "COMPRA",
@@ -83,17 +83,11 @@ POST /transacoes
   "observacao": "Primeira compra",
   "carteira": { "id": 1 }
 }
-´´´
+````
 
 **6. Ver o relatório com cotações ao vivo**
 
-´´´
+````
 GET /carteiras/1/relatorio
-´´´
-
----
-# Diagrama de Classes do Projeto
-<p align="center">
-  <img src="diagramaclasses.png" width="600">
-</p>
+````
 
